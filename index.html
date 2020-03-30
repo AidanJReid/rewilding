@@ -5,14 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+  <!-- Custom Font -->
+  <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Open+Sans&display=swap');
+    </style>
+
   <title>Rewilding Ireland</title>
 </head>
-<body>
-  <h1>Rewilding</h1>
-  <p>In rich countries like Ireland, we’re all very aware of the need to do something about climate change. We want to save the rainforests, and reduce our carbon footprint. But we deforested our landscape hundreds of years ago. When we ask Brazilians to stop chopping down trees, we’re standing on very shaky ground! Let’s do something about it. With the growth in vegetarianism, better farming practices and the movement to drive to carbon neutrality, there’s never been a better time to think about rewilding our own country. We’re just getting started, but please let us know if you’d like to help!</p>
-  <form>
+
+<body style="font-family: 'Open Sans', sans-serif;">
+  <div class="container-fluid text-center">
+  <a href="index.html"><img src="img/rewildimg.png" alt="logo" class="center img-fluid"></a>
+  <!-- Carousel -->
+  <div id="carouselslides" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="img/forest.jpg" style="height:400px;" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/forest2.jpg" style="height:400px;" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/forest3.jpg" style="height:400px;" alt="First slide">
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container pt-4 col-xs-12 col-md-8">
+    <h1 class="text-center mb-3" style="font-family: 'Love Ya Like A Sister', cursive;">Welcome to Rewilding!</h1>
+  <p>In rich countries like Ireland, we’re all very aware of the need to do something about climate change. We want to save the rainforests, and reduce our carbon footprint. But we deforested our landscape hundreds of years ago. When we ask Brazilians to stop chopping down trees, we’re standing on very shaky ground!</p>
+  <p><strong>Let’s do something about it.</strong></p>
+  <p>With the growth in vegetarianism, better farming practices and the movement to drive to carbon neutrality, there’s never been a better time to think about rewilding our own country. We’re just getting started, but please let us know if you’d like to help!</p>
+  </div>
+  <div class="container mx-auto col-xs-12 col-md-6">
+  <form style="border: 1px solid gray; padding: 20px; margin: 25px 0px;">
+    <legend style="font-family: 'Love Ya Like A Sister', cursive;">Get involved</legend>
     <div class="form-group">
       <label for="name">Name</label>
       <input type="text" class="form-control" id="name">
@@ -26,8 +59,8 @@
       <label for="phone">Phone</label>
       <input type="phone" class="form-control" id="phone" placeholder="Enter mobile number">
     </div>
-    <hr>
-    <h3>How would you like to get involved?</h3>
+    <hr style="background-color:black; margin:40px 0;">
+    <h3 style="font-family: 'Love Ya Like A Sister', cursive;">How would you like to get involved?</h3>
     <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
       <label class="form-check-label" for="defaultCheck1">
@@ -58,11 +91,11 @@
         Knowledge Share - Marketing
       </label>
     </div>
-    <hr>
-    <h3>Please tell us a little more about yourself and how you would like to get involved</h3>
+    <hr style="background-color:black; margin:40px 0;">
+    <h5 style="font-family: 'Love Ya Like A Sister', cursive;">Please tell us a little more about yourself</h5>
     <div class="form-group">
-      <label for="exampleFormControlTextarea1">Example textarea</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <label for="exampleFormControlTextarea1"></label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" aria-placeholder="Write here..."></textarea>
     </div>
     <div class="form-group">
       <label for="exampleFormControlSelect1">Location</label>
@@ -100,7 +133,8 @@
         <option>Wicklow</option>
       </select>
     </div>
-    <h3>Please contact me with more information on how to get involved</h3>
+    <hr>
+    <h5 style="font-family: 'Love Ya Like A Sister', cursive;">Keep me updated with information on how to get involved</h5>
     <div class="form-check">
       <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
       <label class="form-check-label" for="exampleRadios1">
@@ -113,8 +147,12 @@
         No
       </label>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary mt-4">Submit</button>
   </form>
+</div>
+<div class="container-fluid footer footer-dark bg-dark" style="height:50px;">
+  <h5 class="text-center pt-2" style="color: white">Copyright Rewilding 2020</h5>
+</div>
   
   <!-- Script Tags for Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
